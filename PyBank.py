@@ -1,7 +1,8 @@
 import csv
 import os
 
-budget_data_path = os.path.join(r'E:\DataSci\Class\Unit 03 - Python\Challenge\Git\Resources\budget_data.csv')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+budget_data_path = os.path.join(current_dir, 'Resources', 'budget_data.csv')
 y = [] # this will house all the values of col 1 (Date), excluding the header
 x = [] # this will house all the values of col 2 (Profit/Loss), excluding the header
 

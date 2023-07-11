@@ -1,10 +1,8 @@
 -------PyBank----------------
 
-There are a few BIG issues with this document.
-1) Average Change is explicitly wrong, I gave up and kept moving
-2) I dont get the same greatest increase and decrease
+All values are correct and match up with requirements, they also post required output to the analysis file 
 
 -------PyPoll---------------
-very minor problems with this one
-1) the percentage of the vote is VERY large and not 2 deimals like in the example, but otherwise correct. 
+
+All values are correct and match up with requirements, they also post required output to the analysis file 
 

@@ -1,6 +1,8 @@
 import csv
+import os
 
-poll_data = r"PyPoll\Resources\election_data.csv"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+poll_data = os.path.join(current_dir, 'Resources', 'election_data.csv')
 
 unique_names = set() #I want to use .add as itll help capture unique values easily!
                     #I will create a "un_list" that has the same thing as above but in a list format instead of set()
