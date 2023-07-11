@@ -1,5 +1,6 @@
 import csv
 import os
+import random
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 poll_data = os.path.join(current_dir, 'Resources', 'election_data.csv')
@@ -57,6 +58,13 @@ with open(poll_data, 'r') as openfile: #this opens the .csv
     elif raymon_vote > charles_vote and raymon_vote > diana_vote:
         winners.append('Raymon Anthony Doane')
 
+    # Check if there are multiple winners
+    if len(winners) > 1:
+        # If multiple winners, select a random winner from the list
+        winner = random.choice(winners)
+    else:
+        winner = winners[0]
+        
     #final statements that are printed for output
     print("Election Results")
     print("-------------------------")
