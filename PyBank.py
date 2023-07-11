@@ -52,7 +52,7 @@ with open(budget_data_path, 'r') as openfile:
     output.append(f"Greatest Decrease in Profits: {min_month} (${min_change})")
 
     # We now make the file itself and write it with what values in the output to wherever your explorer is
-    output_file_path = budget_data_path = os.path.join(r'E:\DataSci\Class\Unit 03 - Python\Challenge\Git\Analysis\pybank_output.txt')
+    output_file_path = budget_data_path = os.path.join(current_dir, 'Analysis', 'pybank_output.txt')
     with open(output_file_path, "w") as outfile:
         outfile.write('\n'.join(output))
 
